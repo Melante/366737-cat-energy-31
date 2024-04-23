@@ -6,6 +6,9 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -129,8 +132,18 @@
         </div>
       </div>
       <div class="results__slider results-slider">
-        <img class="results-slider__image results-slider__image--fat" src="#" width="280" height="256" alt="Жирный кот.">
-        <img class="results-slider__image results-slider__image--slim" src="#" width="280" height="256" alt="Кот, который питается правильно.">
+        <div class="results-slider__before">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fatty-tablet@1x.png 1x, images/fatty-tablet@2x.png 2x">
+            <img class="results-slider__image results-slider__image--fat" src="images/fatty-mobile@1x.png" srcset="images/fatty-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот.">
+          </picture>
+        </div>
+        <div class="results-slider__after">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slim-tablet@1x.png 1x, images/slim-tablet@2x.png 2x">
+            <img class="results-slider__image results-slider__image--slim" src="images/slim-mobile@1x.png" srcset="images/slim-mobile@2x.png 2x" width="280" height="256" alt="Кот, который питается правильно.">
+          </picture>
+        </div>
       </div>
     </section>
     <!-- Контакты -->
