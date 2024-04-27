@@ -1,4 +1,20 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
   font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 400;
+  color: var(--text-basic-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
