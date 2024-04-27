@@ -1,7 +1,7 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
 @import "./blocks/page.scss";
@@ -15,9 +15,8 @@
 @import "./blocks/effect.scss";
 @import "./blocks/results.scss";
 @import "./blocks/results-slider.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
+@import "./blocks/html-logo.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/catalog-item.scss";
 @import "./blocks/compound.scss";
@@ -25,3 +24,5 @@
 @import "./blocks/extra-item.scss";
 @import "./blocks/subscribe.scss";
 @import "./blocks/form.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-footer.scss";
