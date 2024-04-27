@@ -18,3 +18,12 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  width: 300px;
+  padding: 10px;
+  font-family: var(--font-secondary);
+  background-color: var(--button-basic);
+  text-transform: uppercase;
+  color: var(--text-light-color);
+}
