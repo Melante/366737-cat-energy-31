@@ -11,5 +11,37 @@
 }
 
 .extra__present {
-  //
+  background-blend-mode: multiply;
+  background-image: url("../../images/cat-present-mobile@1x.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-color, inherit);
+  width: 280px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/cat-present-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-image: url("../../images/cat-present-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-present-tablet@2x.png");
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    background-image: url("../../images/cat-present-desktop@1x.png");
+    background-size: 245px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-present-desktop@2x.png");
+      background-size: 245px auto;
+    }
+  }
 }

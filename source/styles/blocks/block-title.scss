@@ -1,6 +1,6 @@
 .block-title {
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary, inherit);
   font-size: 36px;
   line-height: 1.11;
-  color: var(--text-secondary-color);
+  color: var(--text-secondary-color, inherit);
 }

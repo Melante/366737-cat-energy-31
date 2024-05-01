@@ -1,5 +1,5 @@
 .site-list {
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary, inherit);
   font-size: 20px;
   line-height: 1;
   list-style-type: none;
@@ -8,5 +8,5 @@
 .site-list__item a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--text-secondary-color);
+  color: var(--text-secondary-color, inherit);
 }

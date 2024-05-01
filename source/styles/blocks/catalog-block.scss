@@ -1,14 +1,6 @@
-.catalog {
-  //
-}
-
-.catalog__title {
+.catalog-block {
   font-family: var(--font-secondary, inherit);
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1;
   color: var(--text-secondary-color, inherit);
-}
-
-.catalog__list {
-  list-style-type: none;
 }

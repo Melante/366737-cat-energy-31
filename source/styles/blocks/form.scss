@@ -3,9 +3,13 @@
 }
 
 .form__field {
-  //
+  font-family: var(--font-secondary, inherit);
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .form__button {
-  //
+  font-size: 20px;
+  list-style: 1.3;
 }

@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   line-height: 1.29;
   font-weight: 400;
-  color: var(--text-basic-color);
+  color: var(--text-basic-color, inherit);
 }
 
 .visually-hidden {
@@ -22,8 +22,19 @@ body {
 .button {
   width: 300px;
   padding: 10px;
-  font-family: var(--font-secondary);
-  background-color: var(--button-basic);
+  font-family: var(--font-secondary, inherit);
+  font-size: 16px;
+  line-height: 1.25;
   text-transform: uppercase;
-  color: var(--text-light-color);
+  background-color: var(--button-basic, inherit);
+  color: var(--text-light-color, inherit);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--button-basic-hover, inherit);
+}
+
+.button:active {
+  color: var(--button-basic-active, inherit);
 }

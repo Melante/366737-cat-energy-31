@@ -19,9 +19,9 @@
 }
 
 .results__cost {
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary, inherit);
   font-size: 14px;
   line-height: 1.43;
-  color: var(--text-secondary-color);
+  color: var(--text-secondary-color, inherit);
   text-transform: uppercase;
 }

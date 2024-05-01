@@ -1,9 +1,18 @@
 .extra-item {
-  //
+  list-style-type: none;
 }
 
 .extra-item__title {
-  //
+  font-family: var(--font-secondary, inherit);
+  font-size: 16px;
+  line-height: 1;
+  color: var(--text-secondary-color, inherit);
+  text-transform: uppercase;
+}
+
+.extra-item__list {
+  font-size: 14px;
+  line-height: 1;
 }
 
 .extra-item__key {
