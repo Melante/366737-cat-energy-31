@@ -8,10 +8,9 @@
 
 .build__title {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 90px;
   font-family: var(--font-secondary, inherit);
   font-size: 24px;
   line-height: 1.54;
@@ -23,39 +22,40 @@
 .build__title::after {
   content: "";
   position: absolute;
-  left: 0;
+  justify-self: start;
+  margin-left: 20px;
 }
 
-.build__title--slim::before {
-  z-index: 1;
+.build__title--slim::after {
   background-image: url("../../images/cat-slim@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 36px;
   height: 50px;
+  transform: translateX(20%);
 }
 
-.build__title--slim::after {
+.build__title--slim::before {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--button-basic, inherit);
+  background-color: var(--button-basic, #68b738);
 }
 
-.build__title--pro::before {
-  z-index: 1;
+.build__title--pro::after {
   background-image: url("../../images/cat-pro@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 67px;
   height: 28px;
+  transform: translateX(-20%);
 }
 
-.build__title--pro::after {
+.build__title--pro::before {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--button-basic, inherit);
+  background-color: var(--button-basic, #68b738);
 }
 
 .build__description {

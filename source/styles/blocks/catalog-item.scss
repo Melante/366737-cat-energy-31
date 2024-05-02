@@ -32,6 +32,11 @@
   color: var(--text-secondary-color, inherit);
 }
 
+.catalog-item__list {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
 .catalog-item__description {
   font-size: 12px;
   line-height: 1.33;
