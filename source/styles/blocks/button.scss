@@ -1,0 +1,19 @@
+.button {
+  width: 300px;
+  padding: 10px;
+  font-family: var(--font-secondary, inherit);
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  background-color: var(--button-basic, #68b738);
+  color: var(--text-light-color, inherit);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--button-basic-hover, #5eaa2f);
+}
+
+.button:active {
+  color: var(--button-basic-active, #5eaa2f);
+}

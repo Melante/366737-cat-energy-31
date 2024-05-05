@@ -1,6 +1,5 @@
 .hero {
   font-family: var(--font-secondary, inherit);
-  text-transform: uppercase;
   background: linear-gradient(transparent 0, var(--button-basic, inherit) 0, var(--button-basic, inherit) 85%, transparent 85%);
   color: var(--text-light-color, inherit);
 }
@@ -14,6 +13,7 @@
 .hero__subtitle {
   font-size: 14px;
   line-height: 1;
+  text-transform: uppercase;
   text-align: center;
 }
 

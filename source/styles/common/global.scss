@@ -1,40 +1,9 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.29;
   font-weight: 400;
   color: var(--text-basic-color, inherit);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.button {
-  width: 300px;
-  padding: 10px;
-  font-family: var(--font-secondary, inherit);
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  background-color: var(--button-basic, #68b738);
-  color: var(--text-light-color, inherit);
-  border: none;
-}
-
-.button:hover {
-  background-color: var(--button-basic-hover, #5eaa2f);
-}
-
-.button:active {
-  color: var(--button-basic-active, #5eaa2f);
 }

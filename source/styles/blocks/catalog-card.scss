@@ -1,0 +1,43 @@
+.catalog-card {
+  //
+}
+
+.catalog-card__link {
+  text-decoration: none;
+}
+
+.catalog-card__image {
+  //
+}
+
+.catalog-card__button {
+  //
+}
+
+.catalog-card__button--extra {
+  color: var(--text-secondary-color, inherit);
+  background-color: var(--button-secondary, inherit);
+}
+
+.catalog-card__button--extra:hover,
+.catalog-card__button--extra:active {
+  background-color: var(--button-secondary-hover, inherit);
+}
+
+.catalog-card__title {
+  font-family: var(--font-secondary, inherit);
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--text-secondary-color, inherit);
+}
+
+.catalog-card__list {
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+.catalog-card__description {
+  font-size: 12px;
+  line-height: 1.33;
+}
