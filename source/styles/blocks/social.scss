@@ -9,3 +9,35 @@
 .social__link {
   //
 }
+
+.social__link::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  mask-image: var(--icon-social);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--social, #666666);
+}
+
+.social__link:hover {
+  --social: var(--social-hover, #68b738);
+}
+
+.social__link:active {
+  --social: var(--social-hover, #68b738);
+  opacity: 30%;
+}
+
+.social__link--vk {
+  --icon-social: url("../../icons/stack.svg#social_vkontakte");
+}
+
+.social__link--youtube {
+  --icon-social: url("../../icons/stack.svg#social_youtube");
+}
+
+.social__link--tg {
+  --icon-social: url("../../icons/stack.svg#social_telegram");
+}

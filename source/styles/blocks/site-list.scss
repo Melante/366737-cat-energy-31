@@ -1,4 +1,5 @@
 .site-list {
+  display: flex;
   font-family: var(--font-secondary, inherit);
   font-size: 20px;
   line-height: 1;
@@ -9,4 +10,18 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--text-secondary-color, inherit);
+}
+
+
+.site-list__item--current a {
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-decoration-color: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-decoration-color: #ffffff;
+  }
 }

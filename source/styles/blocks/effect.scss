@@ -17,3 +17,52 @@
 .effect__description {
   //
 }
+
+.effect__description::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: var(--effect);
+  background-color: var(--back-color, #68b738);
+  background-size: 26px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.effect__item--health {
+  background-image: url("../../icons/stack.svg#effect_one");
+  background-position: center;
+  width: auto;
+  height: 100%;
+  --effect: url("../../icons/stack.svg#health");
+}
+
+.effect__item--water {
+  background-image: url("../../icons/stack.svg#effect_two");
+  background-position: center;
+  width: auto;
+  height: 100%;
+  --effect: url("../../icons/stack.svg#water");
+}
+
+.effect__item--food {
+  background-image: url("../../icons/stack.svg#effect_three");
+  background-position: center;
+  width: auto;
+  height: 100%;
+  --effect: url("../../icons/stack.svg#food");
+}
+
+.effect__item--time {
+  background-image: url("../../icons/stack.svg#effect_four");
+  background-position: center;
+  width: auto;
+  height: 100%;
+  --effect: url("../../icons/stack.svg#time");
+}
