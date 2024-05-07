@@ -3,30 +3,18 @@
 }
 
 .build__program {
-  //
-}
-
-.build__title {
   position: relative;
   display: grid;
   align-items: center;
-  padding-left: 90px;
-  font-family: var(--font-secondary, inherit);
-  font-size: 24px;
-  line-height: 1.54;
-  color: var(--text-secondary-color, inherit);
-  text-transform: uppercase;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 214px;
-  }
 }
 
-.build__title::before,
-.build__title::after {
+.build__program::before,
+.build__program::after {
   content: "";
+  display: inline-block;
   position: absolute;
   justify-self: start;
+  top: 15px;
   margin-left: 20px;
   width: 50px;
   height: 50px;
@@ -45,7 +33,7 @@
   }
 }
 
-.build__title--slim::after {
+.build__program--slim::after {
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
   background-size: contain;
@@ -66,15 +54,16 @@
   }
 }
 
-.build__title--slim::before {
+.build__program--slim::before {
   border-radius: 50%;
   background-color: var(--button-basic, #68b738);
 }
 
-.build__title--pro::after {
+.build__program--pro::after {
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
   background-size: contain;
+  top: 25px;
   width: 67px;
   height: 28px;
   transform: translateX(-20%);
@@ -92,10 +81,24 @@
   }
 }
 
-.build__title--pro::before {
+.build__program--pro::before {
   border-radius: 50%;
   background-color: var(--button-basic, #68b738);
 }
+
+.build__title {
+  padding-left: 90px;
+  font-family: var(--font-secondary, inherit);
+  font-size: 24px;
+  line-height: 1.54;
+  color: var(--text-secondary-color, inherit);
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+  }
+}
+
 
 .build__description {
   font-size: 14px;

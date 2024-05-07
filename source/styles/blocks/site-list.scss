@@ -1,5 +1,6 @@
 .site-list {
   display: flex;
+  gap: 33px;
   font-family: var(--font-secondary, inherit);
   font-size: 20px;
   line-height: 1;
@@ -13,15 +14,16 @@
 }
 
 
-.site-list__item--current a {
+.site-list__item--current a::after {
   @media (min-width: $tablet-width) {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
-    text-decoration-color: #68b738;
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 10px auto 0;
+    border-bottom: 2px solid var(--current-basic, #68b738);
   }
 
   @media (min-width: $desktop-width) {
-    text-decoration-color: #ffffff;
+    border-bottom: 2px solid var(--current-secondary, #ffffff);
   }
 }

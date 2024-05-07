@@ -1,7 +1,26 @@
 .hero {
+  position: relative;
   font-family: var(--font-secondary, inherit);
-  background: linear-gradient(transparent 0, var(--button-basic, inherit) 0, var(--button-basic, inherit) 85%, transparent 85%);
+  width: 100%;
+  background-image: url("../../images/cat-hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 85%;
   color: var(--text-light-color, inherit);
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  left: 0;
+  top: 0;
+  background-color: var(--background-color, rgba(104, 183, 56, 0.85));
 }
 
 .hero__title {
