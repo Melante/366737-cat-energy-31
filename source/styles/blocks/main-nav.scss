@@ -3,5 +3,20 @@
 }
 
 .main-nav__toggle {
-  //
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#open");
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

@@ -1,5 +1,55 @@
 .present {
+  position: relative;
   color: var(--text-light-color, inherit);
+}
+
+.present::before,
+.present::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.present::before {
+  background-image: url("../../images/cat-present-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/cat-present-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-image: url("../../images/cat-present-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-present-tablet@2x.png");
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    background-image: url("../../images/cat-present-desktop@1x.png");
+    background-size: 245px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-present-desktop@2x.png");
+      background-size: 245px auto;
+    }
+  }
+}
+
+.present::after {
+  top: 0;
+  left: 0;
+  background-color: var(--background-color, rgba(104, 183, 56, 0.85));
+  opacity: 0.5;
 }
 
 .present__title {

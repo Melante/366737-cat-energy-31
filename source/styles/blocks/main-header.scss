@@ -4,5 +4,7 @@
 
 .main-header__wrapper {
   @include wrapper;
-  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }

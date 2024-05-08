@@ -1,4 +1,6 @@
 .hero {
+  width: 100%;
+  text-align: center;
   position: relative;
   font-family: var(--font-secondary, inherit);
   color: var(--text-light-color, inherit);
@@ -13,14 +15,9 @@
   content: "";
   position: absolute;
   z-index: -1;
+  left: 0;
   width: 100%;
   height: 85%;
-}
-
-.hero::after {
-  top: 0;
-  left: 0;
-  background-color: var(--background-color, rgba(104, 183, 56, 0.85));
 }
 
 .hero::before {
@@ -40,6 +37,15 @@
       background-image: url("../../images/cat-hero-desktop@2x.jpg");
     }
   }
+}
+
+.hero::after {
+  top: 0;
+  background-color: var(--background-color, rgba(104, 183, 56, 0.85));
+}
+
+.hero__wrapper {
+  @include wrapper;
 }
 
 .hero__title {
