@@ -21,6 +21,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/cat-hero-mobile@2x.jpg");
@@ -44,7 +46,8 @@
 
 .hero::after {
   top: 0;
-  background-color: var(--background-color, rgba(104, 183, 56, 0.85));
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, rgba(104, 183, 56, 0.85) 302px, var(--back-secondary, f2f2f2) 302px);
+
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -58,12 +61,18 @@
 }
 
 .hero__title {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 1;
   text-align: center;
 }
 
 .hero__subtitle {
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
@@ -75,5 +84,8 @@
 }
 
 .hero__link {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
   text-decoration: none;
 }

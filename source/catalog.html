@@ -16,7 +16,7 @@
 <body class="page__body container">
   <!-- Шапка сайта -->
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper wrapper">
       <a class="main-header__logo logo-energy" href="index.html" aria-current="page">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desk.svg">
@@ -26,30 +26,27 @@
         <img class="main-header__logo-title" src="images/logo/logo-text.svg" width="101" height="18" alt="Название Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle " type="button">
           <span class="visually-hidden">Навигация по сайту</span>
         </button>
         <div class="main-nav__open">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
               <a href="index.html" aria-current="page">
                 Главная
               </a>
             </li>
-            <li class="site-list__item  site-list__item--current">
+            <li class="main-nav__item main-nav__item--current">
               <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="#">
                 Подбор программы
               </a>
             </li>
           </ul>
-          <button class="main-nav__close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
         </div>
       </nav>
     </div>

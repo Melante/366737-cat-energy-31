@@ -1,7 +1,6 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
-  width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-basic, --font-secondary);
@@ -14,9 +13,8 @@ body {
 
 .wrapper {
   box-sizing: border-box;
-  max-width: 1220px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -24,6 +22,7 @@ body {
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1600px;
     padding: 0 110px;
   }
 }

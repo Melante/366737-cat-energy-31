@@ -2,5 +2,11 @@
   font-family: var(--font-secondary, inherit);
   font-size: 36px;
   line-height: 1.11;
+  font-weight: 400;
   color: var(--text-secondary-color, inherit);
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }

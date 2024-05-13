@@ -70,3 +70,59 @@
   }
 }
 
+.main-nav__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-secondary, inherit);
+  font-size: 20px;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+}
+
+.main-nav__item {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border, #e6e6e6);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.main-nav__item:first-child {
+  border-top: 1px solid var(--border, #e6e6e6);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text-secondary-color, inherit);
+}
+
+
+.main-nav__item--current a::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 10px auto 0;
+    border-bottom: 2px solid var(--current-basic, #68b738);
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid var(--current-secondary, #ffffff);
+  }
+}

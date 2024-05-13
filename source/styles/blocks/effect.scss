@@ -7,20 +7,40 @@
 }
 
 .effect__list {
-  //
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: start;
+    gap: 135px 37px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .effect__item {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 250px;
+  }
 }
 
-.effect__description {
-  //
-}
 
-.effect__description::before {
+.effect__item::before {
   content: "";
-  display: block;
+  display: inline-block;
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
   background-image: var(--effect);
@@ -36,33 +56,48 @@
 }
 
 .effect__item--health {
-  background-image: url("../../icons/stack.svg#effect_one");
-  background-position: center;
-  width: auto;
-  height: 100%;
   --effect: url("../../icons/stack.svg#health");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#effect_one");
+    background-position: right;
+    height: 100%;
+  }
 }
 
 .effect__item--water {
-  background-image: url("../../icons/stack.svg#effect_two");
-  background-position: center;
-  width: auto;
-  height: 100%;
   --effect: url("../../icons/stack.svg#water");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#effect_two");
+    background-position: right;
+    height: 100%;
+  }
 }
 
 .effect__item--food {
-  background-image: url("../../icons/stack.svg#effect_three");
-  background-position: center;
-  width: auto;
-  height: 100%;
   --effect: url("../../icons/stack.svg#food");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#effect_three");
+    background-position: right;
+    height: 100%;
+  }
 }
 
 .effect__item--time {
-  background-image: url("../../icons/stack.svg#effect_four");
-  background-position: center;
-  width: auto;
-  height: 100%;
   --effect: url("../../icons/stack.svg#time");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#effect_four");
+    background-position: right;
+    height: 100%;
+  }
+}
+
+.effect__description {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
