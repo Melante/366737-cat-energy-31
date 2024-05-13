@@ -116,36 +116,38 @@
     </section>
     <!-- Результаты -->
     <section class="results">
-      <h2 class="results__title block-title block-title--table">Живой пример</h2>
-      <p class="results__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="results__info">
-        <dl class="results__list results-list">
-          <div class="results-list__item">
-            <dt class="results-list__number">5 кг</dt>
-            <dd class="results-list__description">снижение веса</dd>
+      <div class="wrapper">
+        <h2 class="results__title block-title block-title--table">Живой пример</h2>
+        <p class="results__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="results__info">
+          <dl class="results__list results-list">
+            <div class="results-list__item">
+              <dt class="results-list__number">5 кг</dt>
+              <dd class="results-list__description">снижение веса</dd>
+            </div>
+            <div class="results-list__item">
+              <dt class="results-list__number">60 дней</dt>
+              <dd class="results-list__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <div class="results__cost">
+            <span>Затраты на питание:</span>
+            <span>15 000 руб.</span>
           </div>
-          <div class="results-list__item">
-            <dt class="results-list__number">60 дней</dt>
-            <dd class="results-list__description">затрачено времени</dd>
+        </div>
+        <div class="results__slider">
+          <div class="results__slider-before">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fatty-tablet@1x.png 1x, images/fatty-tablet@2x.png 2x">
+              <img class="results__slider-image results__slider-image--fat" src="images/fatty-mobile@1x.png" srcset="images/fatty-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот.">
+            </picture>
           </div>
-        </dl>
-        <div class="results__cost">
-          <span>Затраты на питание:</span>
-          <span>15 000 руб.</span>
-        </div>
-      </div>
-      <div class="results__slider results-slider">
-        <div class="results-slider__before">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/fatty-tablet@1x.png 1x, images/fatty-tablet@2x.png 2x">
-            <img class="results-slider__image results-slider__image--fat" src="images/fatty-mobile@1x.png" srcset="images/fatty-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот.">
-          </picture>
-        </div>
-        <div class="results-slider__after">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slim-tablet@1x.png 1x, images/slim-tablet@2x.png 2x">
-            <img class="results-slider__image results-slider__image--slim" src="images/slim-mobile@1x.png" srcset="images/slim-mobile@2x.png 2x" width="280" height="256" alt="Кот, который питается правильно.">
-          </picture>
+          <div class="results__slider-after">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slim-tablet@1x.png 1x, images/slim-tablet@2x.png 2x">
+              <img class="results__slider-image results__slider-image--slim" src="images/slim-mobile@1x.png" srcset="images/slim-mobile@2x.png 2x" width="280" height="256" alt="Кот, который питается правильно.">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -159,14 +161,16 @@
           <p>Санкт-Петербург</p>
         </div>
       </div>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afae3adf1f07cb8c70770107714b2216535f58e1cba3ab67204f3b5f1541e9e71&amp;source=constructor" width="320" height="362">
-      </iframe>
-      <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
-        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
-        <img class="contacts__map" src="images/location@1x.png" width="320" height="362" alt="Карта с нашим адресом: ул. Большая Конюшенная, д. 19/8">
-      </picture>
-
+      <div class="contacts__map map">
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afae3adf1f07cb8c70770107714b2216535f58e1cba3ab67204f3b5f1541e9e71&amp;source=constructor" width="320" height="362" allowfullscreen loading="lazy" title="Карта с нашим адресом: ул. Большая Конюшенная, д. 19/8"></iframe>
+        <div class="map__back">
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+            <img class="map__image" src="images/location@1x.png" width="320" height="362" alt="Карта с нашим адресом: ул. Большая Конюшенная, д. 19/8" loading="lazy">
+          </picture>
+        </div>
+      </div>
     </section>
   </main>
   <!-- Подвал -->

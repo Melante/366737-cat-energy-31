@@ -12,9 +12,19 @@
   line-height: 1;
   color: var(--text-secondary-color, inherit);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .results-list__description {
   font-size: 12px;
   line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 1;
+  }
 }
