@@ -2,6 +2,12 @@
   background-color: var(--back-grey, #eaeaea);
 }
 
+.results__wrapper {
+  @media (min-width: $desktop-width) {
+    background-color: linear-gradient(var(--back-secondary, #f2f2f2) 23%, var(--back-grey, #eaeaea) 77%);
+  }
+}
+
 .results__title {
   //
 }
@@ -14,13 +20,15 @@
 }
 
 .results__info {
-  //
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .results__list {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  //
 }
 
 .results__cost {
@@ -32,11 +40,16 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    justify-items: end;
+    gap: 8px;
     font-size: 20px;
     line-height: 1;
+    margin-left: auto;
   }
 }
 
 .results__slider {
   display: flex;
+  flex-wrap: wrap;
 }
