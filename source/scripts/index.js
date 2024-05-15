@@ -6,3 +6,4 @@ burger.onclick = function() {
   burger.classList.toggle('main-nav__toggle--open');
   nav.classList.toggle('main-nav--open');
 };
+
