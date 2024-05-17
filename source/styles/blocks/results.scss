@@ -7,6 +7,8 @@
 }
 
 .results__wrapper {
+  padding: 25px 20px 36px;
+
   @media (min-width: $desktop-width) {
     position: relative;
     background-image: linear-gradient(var(--back-basic, #ffffff) 23%, var(--back-grey, #eaeaea) 23%);
@@ -20,6 +22,8 @@
 }
 
 .results__description {
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 16px;
@@ -46,6 +50,7 @@
 }
 
 .results__cost {
+  padding-bottom: 20px;
   font-family: var(--font-secondary, inherit);
   font-size: 14px;
   line-height: 1.43;

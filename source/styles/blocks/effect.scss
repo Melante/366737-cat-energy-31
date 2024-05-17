@@ -1,5 +1,5 @@
 .effect {
-  //
+  margin-bottom: 29px;
 }
 
 .effect__title {
@@ -98,6 +98,8 @@
 }
 
 .effect__description {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;

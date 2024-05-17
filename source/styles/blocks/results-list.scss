@@ -1,21 +1,24 @@
 .results-list {
   display: flex;
   justify-content: center;
-
   text-align: center;
-  gap: 43px;
+  gap: 32px;
 }
 
 .results-list__item {
-
+  display: grid;
   text-align: center;
+  width: 125px;
+  box-sizing: border-box;
 }
 
 .results-list__number {
-  margin-bottom: 8px;
   font-family: var(--font-secondary, inherit);
   font-size: 24px;
   line-height: 1;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--border-special, #cdcdcd);
+  padding: 15px 20px;
   color: var(--text-secondary-color, inherit);
   text-transform: uppercase;
 
@@ -26,8 +29,11 @@
 }
 
 .results-list__description {
+  z-index: 1;
   max-width: 80px;
-  margin: 0;
+  margin: 0 auto;
+  margin-top: -13px;
+  padding: 5px 10px;
   font-size: 12px;
   line-height: 1;
 

@@ -11,7 +11,8 @@
 .build__program {
   position: relative;
   display: grid;
-  padding: 30px 30px 18px 20px;
+  padding: 30px 30px 22px 20px;
+  margin-bottom: 20px;
   align-items: center;
   background-color: var(--back-secondary, #f2f2f2);
 
@@ -38,7 +39,7 @@
   display: inline-block;
   position: absolute;
   justify-self: start;
-  top: 50px;
+  top: 23px;
   margin-left: 20px;
   width: 50px;
   height: 50px;
@@ -112,7 +113,9 @@
 }
 
 .build__title {
-  padding-left: 90px;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-family: var(--font-secondary, inherit);
   font-size: 24px;
   line-height: 1.54;
@@ -129,8 +132,12 @@
 
 
 .build__description {
+  margin: 0;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
   font-size: 14px;
   line-height: 1.29;
+  box-shadow: 0 1px 0 0 var(--border-secondary, #d9d9d9);
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -144,6 +151,8 @@
 }
 
 .build__link {
+  display: flex;
+  gap: 15px;
   font-family: var(--font-secondary, inherit);
   font-size: 16px;
   line-height: 1;
@@ -160,8 +169,8 @@
 .build__link::after {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 12px;
+  width: 35px;
+  height: 15px;
   mask-image: url("../../icons/stack.svg#icon_arrow");
   mask-repeat: no-repeat;
   mask-position: center;

@@ -85,8 +85,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
-    margin-top: 10px;
+    gap: 35px;
+    margin-top: 11px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
 

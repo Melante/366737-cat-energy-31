@@ -1,6 +1,9 @@
 .main-footer {
   display: grid;
+  gap: 20px;
   margin: 0 auto;
+  margin-top: 36px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,9 +16,8 @@
 }
 
 .main-footer__logo {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 1px 0 0 var(--border, #e6e6e6);
+  padding-bottom: 14px;
+  box-shadow: 0 1px 0 0 var(--border-special, #d9d9d9);
 
   @media (min-width: $tablet-width) {
     margin: 0;
