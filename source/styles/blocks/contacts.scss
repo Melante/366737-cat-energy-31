@@ -1,5 +1,9 @@
 .contacts {
   margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
 }
 
 .contacts__address {
@@ -8,6 +12,11 @@
   justify-content: space-between;
   max-width: 770px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+    margin-bottom: 61px;
+  }
 }
 
 .contacts__promo {
@@ -31,6 +40,10 @@
   line-height: 1.43;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 20px;
     font-size: 16px;
     line-height: 1.25;
   }

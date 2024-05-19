@@ -3,6 +3,12 @@
   justify-content: center;
   text-align: center;
   gap: 32px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
 }
 
 .results-list__item {
@@ -10,6 +16,10 @@
   text-align: center;
   width: 125px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .results-list__number {
@@ -38,6 +48,8 @@
   line-height: 1;
 
   @media (min-width: $tablet-width) {
+    margin-top: -9px;
+    max-width: 130px;
     font-size: 14px;
     line-height: 1;
   }

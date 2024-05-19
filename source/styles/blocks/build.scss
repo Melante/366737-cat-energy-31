@@ -1,6 +1,10 @@
 .build {
   display: grid;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,8 +20,10 @@
   align-items: center;
   background-color: var(--back-secondary, #f2f2f2);
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin: 0;
     padding: 41px 61px 55px 52px;
+    align-items: start;
   }
 }
 
@@ -25,7 +31,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,9 +52,10 @@
 
   @media (min-width: $tablet-width) {
     justify-self: end;
-    margin-right: 30px;
+    margin-right: 64px;
     width: 200px;
     height: 200px;
+    top: 24%;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,7 +133,9 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
-    padding-left: 214px;
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 24px;
   }
 }
 
@@ -140,9 +149,10 @@
   box-shadow: 0 1px 0 0 var(--border-secondary, #d9d9d9);
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 57%;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,6 +171,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    align-items: center;
+    gap: 25px;
     font-size: 20px;
     line-height: 1.5;
   }

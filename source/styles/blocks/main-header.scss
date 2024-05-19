@@ -2,6 +2,10 @@
   display: grid;
   width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-header__wrapper {

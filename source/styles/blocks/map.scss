@@ -6,6 +6,10 @@
   position: absolute;
   z-index: 1;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .map__image {
@@ -20,4 +24,3 @@
     height: 400px;
   }
 }
-
