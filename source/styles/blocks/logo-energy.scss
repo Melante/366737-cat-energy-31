@@ -1,3 +1,15 @@
 .logo-energy {
   text-align: center;
 }
+
+.logo-energy:hover {
+  @media (min-width: $desktop-width) {
+    opacity: 80%;
+  }
+}
+
+.logo-energy:active {
+  @media (min-width: $desktop-width) {
+    opacity: 60%;
+  }
+}

@@ -9,6 +9,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    margin-top: 82px;
+    margin-bottom: 70px;
   }
 }
 
@@ -24,6 +26,10 @@
     margin: 0;
     padding: 41px 61px 55px 52px;
     align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 58px;
   }
 }
 
@@ -63,6 +69,7 @@
     width: 100px;
     height: 100px;
     margin-left: 52px;
+    top: 13%;
   }
 }
 
@@ -137,6 +144,12 @@
     margin-top: 32px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+    margin-left: 162px;
+    margin-bottom: 72px;
+  }
 }
 
 
@@ -157,6 +170,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-bottom: 5px;
   }
 }
 

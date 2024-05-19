@@ -13,6 +13,10 @@
     margin-top: 55px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+  }
 }
 
 .main-footer__logo {
