@@ -1,17 +1,10 @@
 .results {
   background: var(--back-grey, #eaeaea);
-
-  @media (min-width: $tablet-width) {
-    //background-color:;
-    background: linear-gradient(var(--back-basic, #ffffff) 55%, var(--back-grey, #eaeaea) 55%);
-  }
-}
-
-.results__wrapper {
   padding-top: 25px;
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
+    background: linear-gradient(var(--back-basic, #ffffff) 55%, var(--back-grey, #eaeaea) 55%);
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 60px;
