@@ -1,5 +1,47 @@
 .catalog-card {
-  //
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.catalog-card::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  position: absolute;
+  height: 1px;
+  right: 0;
+  background: var(--border, #e6e6e6);
+  box-shadow: 100vw 0 0 0 var(--border, #e6e6e6);
+}
+
+.catalog-card--extra {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  width: 100%;
+  padding-top: 78px;
+  position: relative;
+}
+
+.catalog-card--extra::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  position: absolute;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background: var(--border, #e6e6e6);
+  box-shadow: 100vw 0 0 0 var(--border, #e6e6e6);
+}
+
+.catalog-card__block-image {
+  grid-row: 1/-1;
+  min-width: 140px;
 }
 
 .catalog-card__link {
@@ -7,14 +49,67 @@
 }
 
 .catalog-card__image {
-  //
+  display: block;
+  margin: 0 auto;
+}
+
+.catalog-card__title {
+  max-width: 80px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: var(--font-secondary, inherit);
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--text-dark-color, inherit);
+}
+
+.catalog-card__title--extra {
+  position: relative;
+  max-width: 210px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: var(--text-darker-color, #111111);
+}
+
+.catalog-card__title--extra::before,
+.catalog-card__title--extra::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 43%;
+  top: -38px;
+  background-color: var(--border-secondary, #d9d9d9);
+}
+
+.catalog-card__title--extra::before {
+  transform: rotate(90deg);
+}
+
+.catalog-card__list {
+  display: grid;
+  font-size: 12px;
+  line-height: 1.33;
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.catalog-card__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-card__button {
-  //
+  grid-column: -1/1;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .catalog-card__button--extra {
+  margin-top: 20px;
   color: var(--text-secondary-color, inherit);
   background-color: var(--button-secondary, inherit);
 }
@@ -24,20 +119,9 @@
   background-color: var(--button-secondary-hover, inherit);
 }
 
-.catalog-card__title {
-  font-family: var(--font-secondary, inherit);
-  font-size: 16px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: var(--text-dark-color, inherit);
-}
-
-.catalog-card__list {
-  font-size: 12px;
-  line-height: 1.33;
-}
 
 .catalog-card__description {
+  margin: 0;
   font-size: 12px;
   line-height: 1.33;
 }

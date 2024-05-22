@@ -40,6 +40,8 @@
 }
 
 .main-header--catalog {
+  margin-bottom: 0;
+
   @media (min-width: $desktop-width) {
     background-image: none;
     background-color: var(--back-basic, #ffffff);

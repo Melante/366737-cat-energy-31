@@ -9,6 +9,7 @@
   background-color: var(--text-secondary-color, #000000);
   cursor: pointer;
   border: none;
+  top: -8px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -26,11 +27,11 @@
 }
 
 .main-nav__toggle::before {
-  top: -6px;
+  top: -8px;
 }
 
 .main-nav__toggle::after {
-  top: 6px;
+  top: 8px;
 }
 
 .main-nav__toggle.main-nav__toggle--open {
