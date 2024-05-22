@@ -19,6 +19,10 @@
     width: 100vw;
     border-bottom: 1px solid var(--border, #e6e6e6);
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .effect__title {
@@ -85,16 +89,18 @@
 }
 
 .effect__item::after {
-  content: counter(number);
-  position: absolute;
-  counter-increment: number;
-  font-family: var(--font-secondary, "Oswald");
-  font-size: 280px;
-  line-height: 1;
-  z-index: -2;
-  top: -28px;
-  left: 114px;
-  color: var(--back-secondary, #f2f2f2);
+  @media (min-width: $tablet-width) {
+    content: counter(number);
+    position: absolute;
+    counter-increment: number;
+    font-family: var(--font-secondary, "Oswald");
+    font-size: 280px;
+    line-height: 1;
+    z-index: -2;
+    top: -28px;
+    left: 114px;
+    color: var(--back-secondary, #f2f2f2);
+  }
 }
 
 .effect__item--health {

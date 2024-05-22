@@ -13,8 +13,13 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding-bottom: 35px;
-    position: relative;
     background-image: linear-gradient(var(--back-basic, #ffffff) 23%, var(--back-grey, #eaeaea) 23%);
+  }
+}
+
+.results__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }
 
@@ -80,6 +85,7 @@
     font-size: 20px;
     line-height: 1;
     margin-left: auto;
+    margin-top: -10px;
   }
 
   @media (min-width: $desktop-width) {

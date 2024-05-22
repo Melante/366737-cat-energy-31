@@ -92,6 +92,7 @@
   }
 }
 
+
 .main-nav__item {
   padding: 22px 0;
   border-bottom: 1px solid var(--border, #e6e6e6);
@@ -122,6 +123,10 @@
   }
 }
 
+.main-nav__item--catalog a {
+  color: var(--text-secondary-color, #000000);
+}
+
 .main-nav__item:hover {
   opacity: 60%;
 }
@@ -142,5 +147,11 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid var(--current-secondary, #ffffff);
+  }
+}
+
+.main-nav__item--current-catalog {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid var(--current-basic, #68b738);
   }
 }

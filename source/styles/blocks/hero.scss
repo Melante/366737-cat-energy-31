@@ -1,5 +1,4 @@
 .hero {
-  width: 100%;
   text-align: center;
   position: relative;
   font-family: var(--font-secondary, inherit);
@@ -18,37 +17,23 @@
   }
 }
 
-.hero::before,
-.hero::after {
+.hero::before {
   content: "";
   position: absolute;
   z-index: -1;
   left: 0;
-  width: 100%;
-  height: 85%;
-}
-
-.hero::before {
-  background-image: url("../../images/cat-hero-mobile@1x.jpg");
+  background-color: var(--cat-back, #414146);
+  background-image: linear-gradient(var(--background-color, rgba(104, 183, 56, 0.85)) 100%, var(--cat-gradient, #68b738)), url("../../images/cat-hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: top center;
+  background-size: contain;
   width: 100%;
+  height: 63%;
 
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/cat-hero-mobile@2x.jpg");
   }
-
-  @media (min-width: $tablet-width) {
-    background: none;
-  }
-}
-
-.hero::after {
-  top: 0;
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 74%, var(--back-basic, fffffff) 74%);
-
 
   @media (min-width: $tablet-width) {
     background: none;
