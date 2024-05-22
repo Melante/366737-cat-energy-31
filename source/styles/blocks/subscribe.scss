@@ -1,12 +1,15 @@
 .subscribe {
-  //
+  margin-top: 40px;
 }
 
 .subscribe__title {
-  //
+  margin-bottom: 32px;
 }
 
 .subscribe__description {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
   font-family: var(--font-secondary, inherit);
   font-size: 16px;
   line-height: 1.5;

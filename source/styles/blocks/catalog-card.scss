@@ -40,8 +40,11 @@
 }
 
 .catalog-card__block-image {
+  display: grid;
   grid-row: 1/-1;
   min-width: 140px;
+  height: 110px;
+  align-items: center;
 }
 
 .catalog-card__link {
