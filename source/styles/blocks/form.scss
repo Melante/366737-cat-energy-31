@@ -1,5 +1,13 @@
 .form {
-  //
+  display: grid;
+  place-items: center center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    max-width: 635px;
+    margin: 0 auto;
+  }
 }
 
 .form__field {
@@ -13,6 +21,10 @@
   margin-bottom: 15px;
   border: 1px solid var(--border-special, #bdbdbd);
   padding: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
 }
 
 .form__button {
@@ -22,4 +34,8 @@
   line-height: 1.3;
   padding: 15px 30px;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 258px;
+  }
 }

@@ -8,6 +8,11 @@
   background-color: var(--text-light-color, #ffffff);
   color: var(--text-secondary-color, inherit);
   box-shadow: -40px 0 0 0 var(--current-secondary, #ffffff), 40px 0 0 0 var(--current-secondary, #ffffff);
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    margin-left: 40px;
+  }
 }
 
 .catalog-block::before {
@@ -20,4 +25,8 @@
   background: var(--current-basic, #68b738);
   box-shadow: 100vw 0 0 0  var(--current-basic, #68b738);
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+  }
 }

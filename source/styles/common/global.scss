@@ -1,6 +1,8 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font-basic, --font-secondary);
@@ -26,3 +28,18 @@ body {
     padding: 0 110px;
   }
 }
+/*
+* {
+  outline: 2px solid #c41d1d;
+  outline-offset: -2px;
+}
+
+* > * {
+  outline: solid #4ee44e;
+}
+
+*::before,
+*::after {
+  outline: solid #0000ff;
+}
+*/

@@ -2,6 +2,11 @@
   position: relative;
   color: var(--text-light-color, inherit);
   margin-top: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+    margin-bottom: 80px;
+  }
 }
 
 .present::before,
@@ -14,7 +19,8 @@
 }
 
 .present::before {
-  background-image: url("../../images/cat-present-mobile@1x.png");
+  background-color: var(--cat-back, #414146);
+  background-image: linear-gradient(var(--background-color, rgba(104, 183, 56, 0.85)) 100%, var(--cat-gradient, #68b738)), url("../../images/cat-present-mobile@1x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -46,19 +52,23 @@
   }
 }
 
-.present::after {
-  top: 0;
-  left: 0;
-  background-color: var(--background-color, rgba(104, 183, 56, 0.85));
-  opacity: 0.5;
-}
-
 .present__title {
   padding: 60px 57px 43px;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: var(--text-light-color, inherit);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    align-items: center;
+    margin: 0;
+    margin-right: 48px;
+    margin-left: auto;
+    padding: 60px 78px;
+  }
 }
 
 .present__title::before {
@@ -72,4 +82,9 @@
   background-position: center;
   width: 78;
   height: 80;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    margin: 0;
+  }
 }

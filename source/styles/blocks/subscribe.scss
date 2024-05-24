@@ -4,6 +4,10 @@
 
 .subscribe__title {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .subscribe__description {
@@ -14,4 +18,13 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-secondary-color, inherit);
+
+  @media (min-width: $tablet-width) {
+    max-width: 635px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.33;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 }
