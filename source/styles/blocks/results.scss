@@ -98,6 +98,7 @@
 .results__slider {
   display: grid;
   grid-template-columns: 50% auto 50%;
+  margin: 0 auto;
   width: min(100%, 560px);
   aspect-ratio: 280/256;
 
