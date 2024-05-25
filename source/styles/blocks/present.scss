@@ -7,6 +7,11 @@
     margin-top: 72px;
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-height: 288px;
+    margin: 0;
+  }
 }
 
 .present::before,
@@ -41,7 +46,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
     background-image: url("../../images/cat-present-desktop@1x.png");
     background-size: 245px auto;
 
@@ -69,6 +73,13 @@
     margin-left: auto;
     padding: 60px 78px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-align: center;
+    padding: 60px 40px 39px;
+    margin: 0;
+  }
 }
 
 .present__title::before {
@@ -86,5 +97,10 @@
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    margin-bottom: 47px;
   }
 }

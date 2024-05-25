@@ -1,8 +1,11 @@
 .extra {
   margin-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 74px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 81px;
+    margin-bottom: 98px;
   }
 }
 
@@ -12,18 +15,29 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    margin-bottom: 80px;
+  }
 }
 
 .extra__list {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   padding: 0;
   margin: 0;
   display: grid;
   gap: 31px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     box-shadow: 0 0 0 1px var(--border-special, #cdcdcd);
     gap: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fit, minmax(895px, 1fr));
+    box-shadow: none;
   }
 }
 

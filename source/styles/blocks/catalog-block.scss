@@ -13,6 +13,11 @@
     font-size: 32px;
     margin-left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    margin-left: 0;
+  }
 }
 
 .catalog-block::before {
@@ -28,5 +33,9 @@
 
   @media (min-width: $tablet-width) {
     top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
   }
 }

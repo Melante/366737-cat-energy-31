@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 67px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .subscribe__description {
@@ -26,5 +30,9 @@
     line-height: 1.33;
     margin: 0 auto;
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
   }
 }

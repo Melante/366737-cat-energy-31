@@ -68,6 +68,11 @@
     height: 200px;
     margin-bottom: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 210px;
+    margin-bottom: 12px;
+  }
 }
 
 .catalog-card__link {
@@ -96,6 +101,10 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -126,6 +135,11 @@
   @media (min-width: $tablet-width) {
     width: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -70px;
+    left: 38px;
+  }
 }
 
 .catalog-card__title--extra::before {
@@ -144,6 +158,10 @@
     line-height: 1.25;
     gap: 8px;
     margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
   }
 }
 
@@ -172,6 +190,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 82px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 89px;
+  }
 }
 
 .catalog-card__button--extra:hover,
@@ -191,5 +213,9 @@
     max-width: 170px;
     margin: 0 auto;
     margin-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
   }
 }

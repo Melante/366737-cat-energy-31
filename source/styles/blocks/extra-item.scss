@@ -4,9 +4,17 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 26px 38px;
     box-shadow: 0 1px 0 0 var(--border-special, #cdcdcd);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: minmax(250px, 280px);
+    column-gap: 40px;
+    padding: 15px 0;
   }
 }
 
@@ -22,6 +30,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    min-width: 300px;
+  }
 }
 
 .extra-item__list {
@@ -32,18 +45,25 @@
   margin-bottom: 13px;
   padding: 0;
   width: 100%;
-  max-width: 350px;
   font-size: 14px;
   line-height: 1;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
+    max-width: 350px;
     justify-content: flex-end;
     margin-left: auto;
     column-gap: 20px;
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 290px;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 5px;
   }
 }
 
@@ -64,6 +84,11 @@
     text-align: end;
     min-width: 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    min-width: 42px;
+  }
 }
 
 .extra-item__button {
@@ -72,7 +97,14 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    grid-column: -1/1;
     margin-top: 10px;
     max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+    grid-column: none;
+    margin: 0;
   }
 }

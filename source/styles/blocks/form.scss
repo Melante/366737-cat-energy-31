@@ -8,6 +8,11 @@
     max-width: 635px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    max-width: 752px;
+  }
 }
 
 .form__field {

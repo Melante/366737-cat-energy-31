@@ -9,7 +9,6 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-bottom: 82px;
     width: 100%;
   }
 }
@@ -64,6 +63,12 @@
   @media (min-width: $desktop-width) {
     padding-top: 55px;
     margin-bottom: 107px;
+  }
+}
+
+.main-header__wrapper--catalog {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
 

@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 74px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .catalog__title {
@@ -20,6 +24,10 @@
     font-size: 60px;
     margin: 0;
     margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
   }
 }
 
@@ -61,5 +69,10 @@
   @media (min-width: $tablet-width) {
     gap: 64px 60px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 62px 80px;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   }
 }
