@@ -7,6 +7,7 @@
     grid-template-columns: 1fr auto;
     max-width: 635px;
     margin: 0 auto;
+    align-items: normal;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,5 +43,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 258px;
+    max-width: 400px;
   }
 }
