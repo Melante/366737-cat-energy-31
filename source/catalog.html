@@ -18,7 +18,7 @@
 
 <body class="page__body container">
   <!-- Шапка сайта -->
-  <header class="main-header main-header--catalog">
+  <header class="main-header main-header--catalog" data-test="header">
     <div class="main-header__wrapper main-header__wrapper--catalog wrapper">
       <a class="main-header__logo logo-energy" href="index.html" aria-current="page">
         <picture>
@@ -57,7 +57,7 @@
 
   <main class="main-container">
     <!-- Каталог -->
-    <section class="catalog wrapper">
+    <section class="catalog wrapper" data-test="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item catalog-card">
@@ -97,7 +97,7 @@
               <picture>
                 <source width="172" height="196" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/chicken1000-desktop@1x.webp 1x, images/catalog/chicken1000-desktop@2x.webp 2x">
                 <source width="168" height="206" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/chicken1000-tablet@1x.webp 1x, images/catalog/chicken1000-tablet@2x.webp 2x">
-                <source type="image/webp" src="images/catalog/chicken1000-mobile@1x.png" srcset="images/catalog/chicken1000-mobile@1x.webp 1x, images/catalog/chicken1000-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="images/catalog/chicken1000-mobile@1x.webp 1x, images/catalog/chicken1000-mobile@2x.webp 2x">
 
                 <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/chicken1000-desktop@1x.png 1x, images/catalog/chicken1000-desktop@2x.png 2x">
                 <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/catalog/chicken1000-tablet@1x.png 1x, images/catalog/chicken1000-tablet@2x.png 2x">
@@ -293,7 +293,7 @@
       </ul>
     </section>
     <!-- Дополнительные товары -->
-    <section class="extra wrapper">
+    <section class="extra wrapper" data-test="additional">
       <h2 class="extra__title catalog-block">Дополнительные товары</h2>
       <ul class="extra__list">
         <li class="extra__item extra-item">
@@ -354,7 +354,7 @@
 
     </section>
     <!-- Контакты -->
-    <section class="contacts contacts-catalog">
+    <section class="contacts contacts-catalog" data-test="contacts">
       <h2 class="visually-hidden">Наше местоположение</h2>
       <div class="contacts__address wrapper">
         <p class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -380,7 +380,7 @@
     </section>
   </main>
   <!-- Подвал -->
-  <footer class="main-footer wrapper">
+  <footer class="main-footer wrapper" data-test="footer">
     <a class="main-footer__logo logo-energy" href="index.html" aria-current="page">
       <img class="main-footer__logo-image" src="images/logo/logo-text.svg" width="128" height="24" alt="Cat Energy.">
     </a>
@@ -409,7 +409,10 @@
     </ul>
     <a class="main-footer__html html-logo" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="html-logo__title">НTML Academy</span>
-      <img class="html-logo__image" src="images/logo/logo-html.svg" width="27" height="34" alt="Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».">
+      <p class="html-logo__image">
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </p>
+
     </a>
   </footer>
 

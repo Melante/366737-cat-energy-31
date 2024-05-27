@@ -25,7 +25,7 @@
   line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 15px;
-  border: 1px solid var(--border-special, #bdbdbd);
+  border: 1px solid var(--border-input, #e7e7e7);
   padding: 13px;
 
   @media (min-width: $tablet-width) {
@@ -33,6 +33,14 @@
   }
 }
 
+.form__field:hover {
+  --border-input: var(--border-special, #cdcdcd);
+}
+/*  Для неправильной заполненности формы
+.form__field:enabled {
+  --border-input: var(--input--error, #ff8282);
+}
+*/
 .form__button {
   width: 100%;
   max-width: 280px;

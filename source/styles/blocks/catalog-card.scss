@@ -199,6 +199,7 @@
 .catalog-card__button--extra:hover,
 .catalog-card__button--extra:active {
   background-color: var(--button-secondary-hover, inherit);
+  color: var(--text-secondary-color, inherit);
 }
 
 

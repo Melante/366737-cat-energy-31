@@ -176,7 +176,7 @@
 
 .build__link {
   display: flex;
-  flex-wrap: wrap;
+
   gap: 15px;
   font-family: var(--font-secondary, inherit);
   font-size: 16px;
@@ -193,6 +193,10 @@
   }
 }
 
+.build__link:active {
+  opacity: 30%;
+}
+
 .build__link::after {
   content: "";
   display: inline-block;
@@ -205,12 +209,11 @@
 }
 
 .build__link:hover::after {
-  width: 32px;
+  width: 45px;
   transition: 0.5s;
 }
 
-.build__link:active {
-  width: 32px;
-  transition: 0.5s;
+.build__link:active::after {
+  width: 45px;
   opacity: 30%;
 }
