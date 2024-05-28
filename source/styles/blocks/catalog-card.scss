@@ -55,6 +55,10 @@
   right: 0;
   background: var(--border, #e6e6e6);
   box-shadow: 100vw 0 0 0 var(--border, #e6e6e6);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .catalog-card__block-image {
@@ -91,6 +95,7 @@
   font-family: var(--font-secondary, inherit);
   font-size: 16px;
   line-height: 1.25;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--text-dark-color, inherit);
 
@@ -128,12 +133,14 @@
   position: absolute;
   width: 30px;
   height: 2px;
-  left: 30%;
+  left: 43%;
   top: -38px;
   background-color: var(--border-secondary, #d9d9d9);
 
   @media (min-width: $tablet-width) {
     width: 60px;
+    top: -168%;
+    left: 30%;
   }
 
   @media (min-width: $desktop-width) {

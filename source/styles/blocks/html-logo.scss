@@ -13,10 +13,6 @@
   }
 }
 
-.html-logo__title {
-  //
-}
-
 .html-logo:hover {
   color: var(--social-hover, #68b738);
 }
@@ -29,6 +25,7 @@
 .html-logo__image {
   mask-image: url("../../icons/stack.svg#html-academy");
   mask-position: center;
+  margin: 0;
   width: 27px;
   height: 34px;
   background-color: var(--social, #666666);

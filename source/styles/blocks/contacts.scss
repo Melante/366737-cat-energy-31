@@ -6,8 +6,21 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr;
     margin-top: 0;
     position: relative;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    z-index: 3;
+    grid-area: 1 / 1 / auto / -1;
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
   }
 }
 
@@ -19,19 +32,19 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    padding: 0 40px;
     margin-bottom: 61px;
     flex-wrap: nowrap;
     column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
     z-index: 2;
-    position: absolute;
-    top: 23%;
-    left: 110px;
-    padding: 63px 80px;
-
+    box-sizing: border-box;
+    padding: 60px 80px;
     max-width: 565px;
     background-color: var(--back-basic, #ffffff);
   }

@@ -26,10 +26,6 @@
   }
 }
 
-.effect__title {
-  //
-}
-
 .effect__list {
   display: grid;
   margin: 0;
@@ -69,7 +65,6 @@
     background-size: auto 230px;
   }
 }
-
 
 .effect__item::before {
   content: "";

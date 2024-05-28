@@ -1,5 +1,10 @@
 .map {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-area: 1/1/auto/-1;
+  }
 }
 
 .map__iframe {
@@ -10,6 +15,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
   }
 }
 
