@@ -1,8 +1,8 @@
 /* в этот файл добавляет скрипты*/
-const burger = document.querySelector('.main-nav__toggle');
-const nav = document.querySelector('.main-nav__open ');
+const burger = document.querySelector('.navigation__toggle');
+const nav = document.querySelector('.navigation__list ');
 
 burger.onclick = function() {
-  burger.classList.toggle('main-nav__toggle--open');
-  nav.classList.toggle('main-nav--open');
+  burger.classList.toggle('navigation__toggle--open');
+  nav.classList.toggle('navigation__list--open');
 };

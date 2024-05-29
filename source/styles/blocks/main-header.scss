@@ -61,14 +61,13 @@
     flex-wrap: nowrap;
     column-gap: 20px;
     padding-top: 25px;
-    margin-bottom: 63px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
     column-gap: 33%;
     padding-top: 55px;
-    margin-bottom: 107px;
+    margin-bottom: 95px;
   }
 }
 
