@@ -12,6 +12,10 @@
   }
 }
 
+.navigation__toggle--bg {
+  visibility: hidden;
+}
+
 .navigation__toggle::before,
 .navigation__toggle::after {
   content: "";
@@ -43,6 +47,7 @@
   transform: rotate(-45deg);
   top: 0;
 }
+
 
 .navigation__list {
   display: none;

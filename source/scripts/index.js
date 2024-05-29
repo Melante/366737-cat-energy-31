@@ -2,8 +2,10 @@
 const burger = document.querySelector('.navigation__toggle');
 const nav = document.querySelector('.navigation__list');
 const block = document.querySelector('.navigation__list--bg');
+const cross = document.querySelector('.navigation__toggle--bg');
 
 block.classList.remove('navigation__list--bg');
+cross.classList.remove('navigation__toggle--bg');
 
 burger.onclick = function() {
   burger.classList.toggle('navigation__toggle--open');

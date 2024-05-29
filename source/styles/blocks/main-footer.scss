@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 55px;
   }
 
@@ -20,7 +20,9 @@
 }
 
 .main-footer__logo {
-  padding-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
   box-shadow: 0 1px 0 0 var(--border-special, #d9d9d9);
 
   @media (min-width: $tablet-width) {
