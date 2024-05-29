@@ -75,7 +75,7 @@
   }
 }
 
-.main-nav__toggle:hover + .main-nav__open {
+.main-nav__toggle + .main-nav__open {
   display: flex;
   position: absolute;
   margin-top: 10px;
