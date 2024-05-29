@@ -1,11 +1,11 @@
 .navigation__toggle {
   position: relative;
-  width: 24px;
-  height: 2px;
-  background-color: var(--text-secondary-color, #000000);
+  width: 25px;
+  height: 40px;
+  background-color: var(--back-basic, #ffffff);
   cursor: pointer;
   border: none;
-  top: -8px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -16,6 +16,7 @@
 .navigation__toggle::after {
   content: "";
   position: absolute;
+  margin-top: 16px;
   width: 24px;
   height: 2px;
   left: 0;
@@ -24,6 +25,7 @@
 
 .navigation__toggle::before {
   top: -8px;
+  box-shadow: 0 8px;
 }
 
 .navigation__toggle::after {
@@ -35,6 +37,7 @@
 }
 
 .navigation__toggle.navigation__toggle--open::before {
+  box-shadow: none;
   transform: rotate(45deg);
   top: 0;
 }
