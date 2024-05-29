@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 53px;
+    margin-top: 50px;
     margin-bottom: 55px;
   }
 
@@ -29,4 +29,8 @@
     margin-right: 35px;
     box-shadow: none;
   }
+}
+
+.main-footer__logo-image {
+  display: block;
 }
