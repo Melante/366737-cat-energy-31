@@ -12,10 +12,6 @@
   }
 }
 
-.navigation__toggle--bg {
-  visibility: hidden;
-}
-
 .navigation__toggle::before,
 .navigation__toggle::after {
   content: "";
@@ -34,18 +30,22 @@
   top: 8px;
 }
 
-.navigation__toggle.main-nav__toggle--open {
+.navigation__toggle.navigation__toggle--open {
   background-color: transparent;
 }
 
-.navigation__toggle.main-nav__toggle--open::before {
+.navigation__toggle.navigation__toggle--open::before {
   transform: rotate(45deg);
   top: 0;
 }
 
-.navigation__toggle.main-nav__toggle--open::after {
+.navigation__toggle.navigation__toggle--open::after {
   transform: rotate(-45deg);
   top: 0;
+}
+
+.navigation__toggle--bg {
+  visibility: hidden;
 }
 
 
