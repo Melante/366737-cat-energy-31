@@ -1,0 +1,17 @@
+.navigation-nojs,
+.navigation-nojs-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-family: var(--font-secondary, inherit);
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+  left: 0;
+  background-color: var(--text-light-color, #ffffff);
+  z-index: 1;
+}

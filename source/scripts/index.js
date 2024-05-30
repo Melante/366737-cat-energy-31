@@ -1,10 +1,13 @@
 /* в этот файл добавляет скрипты*/
 const burger = document.querySelector('.navigation__toggle');
 const nav = document.querySelector('.navigation__list');
-const block = document.querySelector('.navigation__list--bg');
+const block = document.querySelector('.navigation-nojs');
 const cross = document.querySelector('.navigation__toggle--bg');
+const list = document.querySelector('.navigation-nojs-list');
 
-block.classList.remove('navigation__list--bg');
+
+list.classList.remove('navigation-nojs-list');
+block.classList.remove('navigation-nojs');
 cross.classList.remove('navigation__toggle--bg');
 
 burger.onclick = function() {
